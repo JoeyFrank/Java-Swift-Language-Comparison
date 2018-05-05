@@ -30,13 +30,13 @@ String a = "bee"
 String b = "bee"
 a.equals(b) will return true;
 #### In Swift
-To compare references in swift, a === operator is used. The == is used to compare contents of objects. For instance,
-let a = IntegerRef(10)
-let b = a
-let c = IntegerRef(10)
-a == b  -----> returns true, because their contents are the same
-a === b -----> returns true, because a and b reference the same address
-a === c -----> returns false, because although they both equal 10, they reference different addresses
+To compare references in swift, a === operator is used. The == is used to compare contents of objects. For instance,<br />
+let a = IntegerRef(10)<br />
+let b = a<br />
+let c = IntegerRef(10)<br />
+a == b  -----> returns true, because their contents are the same<br />
+a === b -----> returns true, because a and b reference the same address<br />
+a === c -----> returns false, because although they both equal 10, they reference different addresses<br />
 ### Null/nil references
 #### In Java
 In Java, null can be assigned to any variable of reference (non-primitive) type. Used to signify "no object," "unknown," or "unavailable." 
