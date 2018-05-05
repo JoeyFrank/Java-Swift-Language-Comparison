@@ -28,7 +28,7 @@ a == b returns true<br />
 .equals is a method that all objects have that is used to compare the contents of objects, not their locations. For instance,<br />
 String a = "bee"<br />
 String b = "bee"<br />
-a.equals(b) will return true;<br />
+a.equals(b) will return true, though a == b will return false<br />
 #### In Swift
 To compare references in swift, a === operator is used. The == is used to compare contents of objects. For instance,<br />
 let a = IntegerRef(10)<br />
