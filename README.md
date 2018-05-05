@@ -47,8 +47,9 @@ In Swift, null is handled by optionals, which can signify the absence of a value
 An error in Java is a serious problem that an application should not or could not try to catch, whereas an exception is a condition that an application should try to catch. Errors, such as OutOfMemory, can't be handled in the same way that exceptions can. With exceptions, an opportunity is given to try to do something else with it.
 #### In Swift
 In swift, errors conform to the error protocol, and the programmer can throw an error to indicate failure, instead of absolute failure like in Java. One of the notable things in error catching for swift is guard statements. Guard allows for optional unwrapping, giving the programmer more flexibility in preparing for potential errors.
-
-Lambda expressions, closures, or functions as types  
+### Lambda expressions, closures, or functions as types  
+#### In Java
+#### In Swift
 
 Implementation of listeners and event handlers  
 Singleton  
