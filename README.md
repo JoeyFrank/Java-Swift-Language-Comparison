@@ -49,7 +49,11 @@ An error in Java is a serious problem that an application should not or could no
 In swift, errors conform to the error protocol, and the programmer can throw an error to indicate failure, instead of absolute failure like in Java. One of the notable things in error catching for swift is guard statements. Guard allows for optional unwrapping, giving the programmer more flexibility in preparing for potential errors.
 ### Lambda expressions, closures, or functions as types  
 #### In Java
+Anonymous classes are used to implement a method that has been defined by a funtional interface. Using an arrow like so: <br />(n)—>n+n<br />The left side specifies the parameters, and the right side is the lambda body. These lambda expressions allow the programmer to define a method without necessarily having to name it. One common use of lambda expressions is to use them as arguments, treating them almost as if they were n actual data type. While functions can't explicitly be data types in Java, lambda expressions are close to treating them as such.
 #### In Swift
+Unlike in Java, functions in Swift are actual data types, and can be treated as such. The type of function consists of its parameter types and return type. Because of this, functions in swift can be assigned to variables, like so... <br />
+var mathFunction: (Int, Int) -> Int = addTwoInts<br />
+Not only can functions in swift be variables, but can be parameters and return types for other functions
 
 Implementation of listeners and event handlers  
 Singleton  
