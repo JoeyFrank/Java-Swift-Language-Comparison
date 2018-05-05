@@ -14,7 +14,10 @@ Interfaces / protocols
 Inheritance / extension  
 Reflection  
 
-Memory management  
+### Memory management 
+##### In Java
+One of the immediate things that one will understand about memory management in Java is its garbage collector, which automatically handles closing and freeing of allocated memory. Besides that though, java has a Java Memory Model, often referred to as JVM. The JVM creates a heap to store memory, and when the heap is filled, garbage is collected. The heap is often split into two nodes; a young generation and an old generation. The young generation is used primarily for allocation of objects, while the old generation holds long-lived objects. The young generation exists because most objects are short lived, which helps speed up the process of allocation and deallocation.
+
 Comparisons of references and values  
 Null/nil references  
 Errors and exception handling  
