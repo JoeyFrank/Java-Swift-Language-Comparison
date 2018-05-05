@@ -21,14 +21,14 @@ One of the immediate things that one will understand about memory management in 
 Much memory allocation in Swift is handled through Allocation Reference Counting, or ARC. ARC is used to be predictable and efficient in resource scarce environments, such as iOS. Although automatic, relationships between objects do need to be considered in order to avoid memory leaks. Situations such as reference cycles can throw a wrench in the ARC, so while it typically works very well, it's important to keep good code.
 ### Comparisons of references and values
 #### In Java
-== and != are comparison operators used to compare memory locations of objects. == and != are not used to compare the contents of objects.  For instance, 
-int a = 5
-int b = a
-a == b returns true
-.equals is a method that all objects have that is used to compare the contents of objects, not their locations. For instance,
-String a = "bee"
-String b = "bee"
-a.equals(b) will return true;
+== and != are comparison operators used to compare memory locations of objects. == and != are not used to compare the contents of objects.  For instance, <br />
+int a = 5<br />
+int b = a<br />
+a == b returns true<br />
+.equals is a method that all objects have that is used to compare the contents of objects, not their locations. For instance,<br />
+String a = "bee"<br />
+String b = "bee"<br />
+a.equals(b) will return true;<br />
 #### In Swift
 To compare references in swift, a === operator is used. The == is used to compare contents of objects. For instance,<br />
 let a = IntegerRef(10)<br />
