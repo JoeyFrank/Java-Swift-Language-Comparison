@@ -1,5 +1,5 @@
 # Java-Swift-Language-Comparison
-A comparison between the Swift and Java object oriented programming languages
+A comparison between the Swift and Java object oriented programming languages by Joseph Frank, Mercy Housh, Austin Sizemore, and Ian Smith
 
 
 Language purpose/genesis  
