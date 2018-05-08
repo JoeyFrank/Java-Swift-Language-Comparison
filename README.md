@@ -3,7 +3,7 @@ A comparison between the Swift and Java object oriented programming languages by
 
 
 
-Language purpose/genesis:
+##**Language purpose/genesis:**
 
 Java:
 
@@ -14,7 +14,7 @@ Swift:
 Swift is a general-purpose, multi-paradigm, compiled programming languagedeveloped by Apple Inc. for iOS, macOS, watchOS, tvOS, and Linux. Swift is designed to work with Apple's Cocoa and Cocoa Touch frameworks and the large body of existing Objective-C (ObjC) code written for Apple products. -also same google
 
 
-Unique features of the language:
+##**Unique features of the language:**
 
 Java:
 
@@ -37,7 +37,7 @@ if stuff != nil {
 ```
 
 
-Name spaces:
+##**Name spaces:**
 
 Java:
 
@@ -48,9 +48,11 @@ But also has a full name that incorporates the name of the package it belongs in
 •    packageA.class.java.
 If packages themselves did not have unique names then we would not be able to differentiate between classes of the same name
 EX.)
-•    packageA.class.java
-•    package.class.java
 
+```Java
+packageA.class.java
+package.class.java
+```
 Swift:
 
 Swift does not actually support namespaces in modules. There are ways around this. Two ways to make namespaces in Swift include utilizing structs or enums. For Structs, we can define an example struct called API:
@@ -83,32 +85,31 @@ struct API {
 ```
 
 
-Types:
+##**Types:**
 
 Java:
 
-Java supports:
--Booleans
--Bytes
--Char
--Short
--Int
--Long
--Float
--Double
+- Booleans
+- Bytes
+- Char
+- Short
+- Int
+- Long
+- Float
+- Double
 
 
 Swift:
 
--Int
--Double
--Float
--Bool
--Character
--String
+- Int
+- Double
+- Float
+- Bool
+- Character
+- String
 
 
-Classes:
+##**Classes:**
 
 Java:
 
@@ -143,16 +144,16 @@ with both of these classes existing in a Dog.java and Cat.java files respectivel
 Swift:
 
 Classes always have their first letter capitalized to show that they are a class. They can:
--Define properties to store values
--Define methods to provide functionality
--Define subscripts to provide access to their values using subscript syntax
--Define initializers to set up their initial state
--Be extended to expand their functionality beyond a default implementation
--Conform to protocols to provide standard functionality of a certain kind
--Inheritance enables one class to inherit the characteristics of another.
--Type casting enables you to check and interpret the type of a class instance at runtime.
--Deinitializers enable an instance of a class to free up any resources it has assigned.
--Reference counting allows more than one reference to a class instance.
+- Define properties to store values
+- Define methods to provide functionality
+- Define subscripts to provide access to their values using subscript syntax
+- Define initializers to set up their initial state
+- Be extended to expand their functionality beyond a default implementation
+- Conform to protocols to provide standard functionality of a certain kind
+- Inheritance enables one class to inherit the characteristics of another.
+- Type casting enables you to check and interpret the type of a class instance at runtime.
+- Deinitializers enable an instance of a class to free up any resources it has assigned.
+- Reference counting allows more than one reference to a class instance.
 
 Example of a class in swift:
 
@@ -165,7 +166,6 @@ class VideoMode {
 }
 
 ```
-
 
 
 ### Instance reference name in data type (class)
