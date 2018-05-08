@@ -7,7 +7,7 @@ A comparison between the Swift and Java object oriented programming languages by
 
 Java:
 
-Java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible -google language purpose
+Java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.
 
 Swift:
 
@@ -43,9 +43,17 @@ Java:
 
 Java files are usually organized into packages that each have their own distinct name. Packages are a collection of classes. Classes can share the name of another class in another package as each one can be differentiated because of the separate packages they belongs to.
 Each of these classes has a simple name such as:
+
+```Java
 •    class.java
+```
+
 But also has a full name that incorporates the name of the package it belongs in:
-•    packageA.class.java.
+
+```Java
+•    packageA.class.java
+```
+
 If packages themselves did not have unique names then we would not be able to differentiate between classes of the same name
 EX.)
 
@@ -53,6 +61,7 @@ EX.)
 packageA.class.java
 packageB.class.java
 ```
+
 Swift:
 
 Swift does not actually support namespaces in modules. There are ways around this. Two ways to make namespaces in Swift include utilizing structs or enums. For Structs, we can define an example struct called API:
@@ -97,7 +106,6 @@ Java:
 - Long
 - Float
 - Double
-
 
 Swift:
 
