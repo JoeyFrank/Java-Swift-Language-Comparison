@@ -2,11 +2,141 @@
 A comparison between the Swift and Java object oriented programming languages by Joseph Frank, Mercy Housh, Austin Sizemore, and Ian Smith
 
 
-Language purpose/genesis  
-Unique features of the language  
-Name spaces  
-Types  
-Classes  
+
+Language purpose/genesis:
+
+Java:
+
+Java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible -google language purpose
+
+Swift:
+
+Swift is a general-purpose, multi-paradigm, compiled programming languagedeveloped by Apple Inc. for iOS, macOS, watchOS, tvOS, and Linux. Swift is designed to work with Apple's Cocoa and Cocoa Touch frameworks and the large body of existing Objective-C (ObjC) code written for Apple products. -also same google
+
+
+Unique features of the language:
+
+Java:
+
+JVM
+
+Swift:
+
+Optionals, deeply integrated with apple systems
+
+
+Name spaces:
+
+Java:
+
+Java files are usually organized into packages that each have their own distinct name. Packages are a collection of classes. Classes can share the name of another class in another package as each one can be differentiated because of the separate packages they belongs to.
+Each of these classes has a simple name such as:
+•    class.java
+But also has a full name that incorporates the name of the package it belongs in:
+•    packageA.class.java.
+If packages themselves did not have unique names then we would not be able to differentiate between classes of the same name
+EX.)
+•    packageA.class.java
+•    package.class.java
+
+Swift:
+
+Swift does not actually support namespaces in modules. There are ways around this. Two ways to make namespaces in Swift include utilizing structs or enums. For Structs, we can define an example struct called API:
+
+struct API {
+    static let baseURL = "https://www.google.com"
+    static let token = "abcdefghijklmnopqrstuvwxyz"    
+}
+
+When using the API struct, we can simply make a reference to it like so:
+
+if let url = URL(string: API.baseURL)
+
+But if we do not want people to be able to make an instance of our struct, we can include a private initializer or private init to keep the contents inaccessible from other parts of the project
+
+struct API {
+
+    private init() {}
+
+    static let baseURL = "https://www.google.com"
+    static let token = "abcdefghijklmnopqrstuvwxyz"    
+}
+
+
+Types:
+
+Java:
+
+Java supports:
+-Booleans
+-Bytes
+-Char
+-Short
+-Int
+-Long
+-Float
+-Double
+
+
+Swift:
+
+-Int
+-Double
+-Float
+-Bool
+-Character
+-String
+
+
+Classes:
+
+Java:
+
+Classes always have their first letter capitalized to show that they are a class. Classes can be have tha control access modifiers of public, private, protected, or default and are used to add different functionality to an overall program. Objects are also made within classes with objects having different methods on them potentially. Constructors are used to help make an object. If one is not defined for a class then one is made by default in Java.
+
+EX.)
+
+public class Dog
+{ 
+    public Dog(String name) {
+    // This constructor has one parameter, name.
+    }
+    void barking() {
+        System.out.println("Bark");
+    }
+    void whimper() {
+        System.out.println("Whimper");
+    }
+
+public class Cat {
+    void catcall() {
+        System.out.println("Meow");
+    }
+    void purr() {
+        System.out.println("Purr");
+    }
+}
+
+with both of these classes existing in a Dog.java and Cat.java files respectively.
+
+Swift:
+
+Classes always have their first letter capitalized to show that they are a class. They can:
+-Define properties to store values
+-Define methods to provide functionality
+-Define subscripts to provide access to their values using subscript syntax
+-Define initializers to set up their initial state
+-Be extended to expand their functionality beyond a default implementation
+-Conform to protocols to provide standard functionality of a certain kind
+-Inheritance enables one class to inherit the characteristics of another.
+-Type casting enables you to check and interpret the type of a class instance at runtime.
+-Deinitializers enable an instance of a class to free up any resources it has assigned.
+-Reference counting allows more than one reference to a class instance.
+Example of a class in swift:
+
+(Insert picture here)
+
+
 
 ### Instance reference name in data type (class)
 
