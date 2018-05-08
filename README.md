@@ -11,7 +11,7 @@ Java is a general-purpose computer-programming language that is concurrent, clas
 
 Swift:
 
-Swift is a general-purpose, multi-paradigm, compiled programming languagedeveloped by Apple Inc. for iOS, macOS, watchOS, tvOS, and Linux. Swift is designed to work with Apple's Cocoa and Cocoa Touch frameworks and the large body of existing Objective-C (ObjC) code written for Apple products.
+Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. for iOS, macOS, watchOS, tvOS, and Linux. Swift is designed to work with Apple's Cocoa and Cocoa Touch frameworks and the large body of existing Objective-C (ObjC) code written for Apple products.
 
 
 ### **Unique features of the language:**
