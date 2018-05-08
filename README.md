@@ -3,7 +3,7 @@ A comparison between the Swift and Java object oriented programming languages by
 
 
 
-## ** Language purpose/genesis: **
+### **Language purpose/genesis:**
 
 Java:
 
@@ -14,7 +14,7 @@ Swift:
 Swift is a general-purpose, multi-paradigm, compiled programming languagedeveloped by Apple Inc. for iOS, macOS, watchOS, tvOS, and Linux. Swift is designed to work with Apple's Cocoa and Cocoa Touch frameworks and the large body of existing Objective-C (ObjC) code written for Apple products. -also same google
 
 
-## ** Unique features of the language: **
+### **Unique features of the language:**
 
 Java:
 
@@ -37,7 +37,7 @@ if stuff != nil {
 ```
 
 
-## ** Name spaces: **
+### **Name spaces:**
 
 Java:
 
@@ -85,7 +85,7 @@ struct API {
 ```
 
 
-## ** Types: **
+### **Types:**
 
 Java:
 
@@ -109,7 +109,7 @@ Swift:
 - String
 
 
-## ** Classes: **
+### **Classes:**
 
 Java:
 
