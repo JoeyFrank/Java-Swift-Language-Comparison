@@ -24,7 +24,17 @@ Swift:
 
 This language is heavily integrated with apple systems and is almost entirely exclusive. There also exists Optional Chaining which are used on values to determine if they can be nil or not. This can be checked by using a check statement such as an if or if let to determine if there is a value or not. An Optional is depicted with a question mark behind it. If a programmer knows for sure that a value will not be nil then an exclamation point can be used afterwards to force unwrap it.
 
-(insert picture here)
+```Swift
+
+var stuff: String?
+
+if stuff != nil {
+    print(Success)
+} else {
+    print(Unsuccessful)
+}
+
+```
 
 
 Name spaces:
@@ -45,18 +55,32 @@ Swift:
 
 Swift does not actually support namespaces in modules. There are ways around this. Two ways to make namespaces in Swift include utilizing structs or enums. For Structs, we can define an example struct called API:
 
+```Swift
 struct API {
     static let baseURL = "https://www.google.com"
     static let token = "abcdefghijklmnopqrstuvwxyz"    
 }
+```
 
 When using the API struct, we can simply make a reference to it like so:
 
+```Swift
 if let url = URL(string: API.baseURL)
+```
 
 But if we do not want people to be able to make an instance of our struct, we can include a private initializer or private init to keep the contents inaccessible from other parts of the project
 
-(insert picture here)
+```Swift
+
+struct API {
+    
+    private init() {}
+    
+    static let baseURL = "https://www.google.com"
+    static let token = "abcdefghijklmnopqrstuvwxyz"
+}
+
+```
 
 
 Types:
@@ -92,6 +116,7 @@ Classes always have their first letter capitalized to show that they are a class
 
 EX.)
 
+```Java
 public class Dog
 { 
     public Dog(String name) {
@@ -112,7 +137,7 @@ public class Cat {
         System.out.println("Purr");
     }
 }
-
+```
 with both of these classes existing in a Dog.java and Cat.java files respectively.
 
 Swift:
@@ -128,9 +153,18 @@ Classes always have their first letter capitalized to show that they are a class
 -Type casting enables you to check and interpret the type of a class instance at runtime.
 -Deinitializers enable an instance of a class to free up any resources it has assigned.
 -Reference counting allows more than one reference to a class instance.
+
 Example of a class in swift:
 
-(Insert picture here)
+```Swift
+
+class VideoMode {
+    var interlaced = false
+    var frameRate = 0.0
+    var name: String?
+}
+
+```
 
 
 
