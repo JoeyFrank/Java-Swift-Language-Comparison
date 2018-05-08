@@ -268,22 +268,25 @@ interface MyString {
 	String myStringFunction(String str);
 }
 
-public static String reverseStr(MyString reverse, String str){
-  return reverse.myStringFunction(str);
-}
+public class functionalExample{
 
-public static void main (String args[]) {
+	public static String reverseStr(MyString reverse, String str){
+  		return reverse.myStringFunction(str);
+	}
 
-	MyString reverse = (str) -> {
-		String result = "";
+	public static void main (String args[]) {
+		MyString reverse = (str) -> {
+			String result = "";
 		
-		for(int i = str.length()-1; i >= 0; i--)
-			result += str.charAt(i);
+			for(int i = str.length()-1; i >= 0; i--){
+				result += str.charAt(i);
+			}
 		
-		return result;
-	};
+			return result;
+		};
 
-	System.out.println(reverseStr(reverse, "Lambda Demo")); 
+		System.out.println(reverseStr(reverse, "Functional Demo")); 
+	}
 }
 
 ```
