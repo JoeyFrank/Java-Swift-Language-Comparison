@@ -18,11 +18,13 @@ Unique features of the language:
 
 Java:
 
-JVM
+A Java virtual machine (JVM) is a virtual machine that enables a computer to run Java programs as well as programs written in other languages and compiled to Java bytecode.
 
 Swift:
 
-Optionals, deeply integrated with apple systems
+This language is heavily integrated with apple systems and is almost entirely exclusive. There also exists Optional Chaining which are used on values to determine if they can be nil or not. This can be checked by using a check statement such as an if or if let to determine if there is a value or not. An Optional is depicted with a question mark behind it. If a programmer knows for sure that a value will not be nil then an exclamation point can be used afterwards to force unwrap it.
+
+(insert picture here)
 
 
 Name spaces:
@@ -54,13 +56,7 @@ if let url = URL(string: API.baseURL)
 
 But if we do not want people to be able to make an instance of our struct, we can include a private initializer or private init to keep the contents inaccessible from other parts of the project
 
-struct API {
-
-    private init() {}
-
-    static let baseURL = "https://www.google.com"
-    static let token = "abcdefghijklmnopqrstuvwxyz"    
-}
+(insert picture here)
 
 
 Types:
